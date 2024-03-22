@@ -267,6 +267,17 @@ body {
 .services-list div:hover {
   transform: translateY(-10px);
 }
+/* progress bar start*/
+/* .sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+.sub-title span {
+  color: #0ef;
+}
 
 section {
   display: flex;
@@ -280,7 +291,7 @@ section {
   margin-left: 120px;
 }
 
-.heading1 {
+.heading {
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -293,7 +304,7 @@ section {
 }
 
 .Technical-bars .bar {
-  margin-top: 40px 0;
+  margin: 40px 0;
 }
 
 .Technical-bars .bar:first-child {
@@ -320,7 +331,7 @@ section {
   border-radius: 10px;
   width: 100%;
   height: 5px;
-  background-color: #000000;
+  background-color: #000;
   animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
@@ -337,26 +348,119 @@ section {
   background-color: #0ef;
   position: absolute;
   border-radius: 10px;
-  animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
 }
 
 .progress-line.java span {
   width: 90%;
+} */
+
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  padding-top: 30px;
 }
+
+.sub-title span {
+  color: #0ef;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 120px;
+}
+
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+
+.bar {
+  font-size: 23px;
+}
+
+.Technical-bars .bar {
+  margin: 40px 0;
+}
+
+.Technical-bars .bar:first-child {
+  margin-top: 0;
+}
+
+.Technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+
+.Technical-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: left;
+}
+
+.progress-line.java span {
+  width: 90%;
+}
+
 .progress-line.html span {
-  width: 90%;
+  width: 80%;
 }
+
 .progress-line.css span {
-  width: 90%;
+  width: 75%;
 }
+
 .progress-line.javascript span {
-  width: 90%;
+  width: 85%;
 }
+
 .progress-line.sql span {
-  width: 90%;
+  width: 70%;
 }
+
+/* Progrss bar end*/
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
