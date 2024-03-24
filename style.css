@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -268,200 +270,6 @@ body {
 .services-list div:hover {
   transform: translateY(-10px);
 }
-/* progress bar start*/
-/* .sub-title {
-  text-align: center;
-  font-size: 60px;
-  padding-bottom: 70px;
-  padding-top: 30px;
-}
-
-.sub-title span {
-  color: #0ef;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.conatiner1 {
-  width: 600px;
-  height: 500px;
-  padding: 75px 90px;
-  margin-left: 120px;
-}
-
-.heading {
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 5px;
-  margin-bottom: 50px;
-}
-
-.bar {
-  font-size: 23px;
-}
-
-.Technical-bars .bar {
-  margin: 40px 0;
-}
-
-.Technical-bars .bar:first-child {
-  margin-top: 0;
-}
-
-.Technical-bars .bar:last-child {
-  margin-bottom: 0;
-}
-
-.Technical-bars .bar .info {
-  margin-bottom: 5px;
-}
-
-.Technical-bars .bar .info span {
-  font-size: 17px;
-  font-weight: 500;
-  animation: showText 0.5s 1s linear forwards;
-  opacity: 0;
-}
-
-.Technical-bars .bar .progress-line {
-  position: relative;
-  border-radius: 10px;
-  width: 100%;
-  height: 5px;
-  background-color: #000;
-  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.Technical-bars .bar .progress-line span {
-  height: 100%;
-  background-color: #0ef;
-  position: absolute;
-  border-radius: 10px;
-  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.progress-line.java span {
-  width: 90%;
-}
-
-.sub-title {
-  text-align: center;
-  font-size: 60px;
-  padding-bottom: 70px;
-  padding-top: 30px;
-}
-
-.sub-title span {
-  color: #0ef;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container1 {
-  width: 600px;
-  height: 500px;
-  padding: 75px 90px;
-  margin-left: 120px;
-}
-
-.heading {
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 5px;
-  margin-bottom: 50px;
-}
-
-.bar {
-  font-size: 23px;
-}
-
-.Technical-bars .bar {
-  margin: 40px 0;
-}
-
-.Technical-bars .bar:first-child {
-  margin-top: 0;
-}
-
-.Technical-bars .bar:last-child {
-  margin-bottom: 0;
-}
-
-.Technical-bars .bar .info {
-  margin-bottom: 5px;
-}
-
-.Technical-bars .bar .info span {
-  font-size: 17px;
-  font-weight: 500;
-  animation: showText 0.5s 1s linear forwards;
-  opacity: 0;
-}
-
-.Technical-bars .bar .progress-line {
-  position: relative;
-  border-radius: 10px;
-  width: 100%;
-  height: 5px;
-  background-color: #000;
-  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.Technical-bars .bar .progress-line span {
-  height: 100%;
-  background-color: #0ef;
-  position: absolute;
-  border-radius: 10px;
-  transform-origin: left;
-}
-
-.progress-line.java span {
-  width: 90%;
-}
-
-.progress-line.html span {
-  width: 80%;
-}
-
-.progress-line.css span {
-  width: 75%;
-}
-
-.progress-line.javascript span {
-  width: 85%;
-}
-
-.progress-line.sql span {
-  width: 70%;
-} */
-
-/* Progrss bar end*/
 
 /* Project start */
 .main-text {
@@ -703,6 +511,99 @@ form textarea {
   padding: 10px;
   border-radius: 0.5rem;
 }
+
+/* Progress Bar Start */
+html {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-bar {
+  width: 600px;
+  background: #051129;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-bar .bar {
+  margin: 20px 0;
+}
+
+.skills-bar .bar:first-child {
+  margin-top: 0px;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #051129;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255, 255, 255, 0.8);
+}
+
+.bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: #0ef;
+  position: absolute;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  content: "80%";
+  right: 0;
+  top: -28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line.java span::after {
+  content: 90%;
+}
+
+.progress-line.html span::after {
+}
+
+.progress-line.html span::after {
+}
+
+.progress-line.html span::after {
+}
+
+.progress-line.html span::after {
+}
+/* Progress Bar End */
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -746,4 +647,3 @@ form textarea {
     opacity: 1;
   }
 }
-
