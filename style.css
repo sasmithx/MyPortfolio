@@ -594,6 +594,10 @@ html,
   width: 90%;
 }
 
+/* .bar .progress-line.java span::after {
+  content: "90%";
+} */
+
 .progress-line.python span {
   width: 60%;
 }
