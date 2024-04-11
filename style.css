@@ -647,7 +647,7 @@ html,
   100% {
     opacity: 1;
   }
-}
+} 
 
 /* Progress Bar End */
 @keyframes slideRight {
@@ -696,3 +696,5 @@ html,
 
 
 /* Media Queries */
+
+/* media impl */
