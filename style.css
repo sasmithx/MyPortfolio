@@ -670,7 +670,7 @@ html,
   position: relative;
 }
 
-.skills-bar:after {
+/* .skills-bar:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -679,7 +679,7 @@ html,
   height: 4px;
   width: 100px;
   background-color: #00eeff;
-}
+} */
 
 .skill-container {
   display: grid;
