@@ -38,6 +38,12 @@ body {
   animation: slideRight 1s ease forwards;
 }
 
+/* ================================== */
+.hamburger {
+  display: none;
+}
+/* ================================== */
+
 .navbar a {
   display: inline-block;
   font-size: 25px;
@@ -54,6 +60,68 @@ body {
 .navbar a:hover {
   color: #0ef;
 }
+
+/* ================================== */
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .navbar.active {
+    height: 450px;
+  }
+
+  .navbar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .navbar.active a {
+    opacity: 1;
+  }
+
+  /* .navbar ul li a {
+    margin-bottom: 12px;
+    color: white;
+  } */
+}
+/* ================================== */
 
 .home {
   position: relative;
@@ -593,7 +661,6 @@ html,
 .progress-line.java span {
   width: 90%;
 }
-
 
 .progress-line.python span {
   width: 60%;
