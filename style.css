@@ -42,6 +42,11 @@ body {
 .hamburger {
   display: none;
 }
+
+.navbar a {
+  display: flex;
+}
+
 /* ================================== */
 
 .navbar a {
@@ -56,6 +61,10 @@ body {
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
+
+/* .navbar a:hover {
+  color: #0ef;
+} */
 
 .navbar a:hover {
   color: #0ef;
@@ -116,11 +125,12 @@ body {
     opacity: 1;
   }
 
-  /* .navbar ul li a {
+  .navbar a {
     margin-bottom: 12px;
     color: white;
-  } */
+  }
 }
+
 /* ================================== */
 
 .home {
