@@ -450,6 +450,8 @@ body {
   width: 100%;
 }
 
+/* Project End */
+
 /* Contact Section Start */
 
 .contact {
@@ -929,6 +931,20 @@ html,
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .portfolio-content .row {
+    grid-template-columns: 1fr;
+    padding: 2rem 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .portfolio-content .row img {
+    grid-template-columns: 1fr;
+    padding: 1rem 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -937,5 +953,19 @@ html,
     padding: 2rem 50px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .portfolio-content .row {
+    grid-template-columns: 1fr;
+    padding: 2rem 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .portfolio-content .row img {
+    grid-template-columns: 1fr;
+    padding: 1rem 50px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
